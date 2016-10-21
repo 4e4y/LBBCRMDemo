@@ -1,0 +1,235 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="bootstrap" />
+  <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script data-require="angular.js@2.0.0" data-semver="2.0.0" src="https://code.angularjs.org/2.0.0-snapshot/angular2.js"></script>
+
+    <title>System - Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+	<style>
+		body {
+			padding-top: 50px;
+		}
+		.starter-template {
+			padding: 40px 15px;
+			text-align: center;
+		}
+	</style>
+  </head>
+
+  <body>
+  
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img alt="Brand" src="...">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<p class="navbar-text navbar-left">System</p>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<ul class="nav nav-pills nav-justified">
+			<li role="presentation" class="active"><a href="#">Dashboard</a></li>
+			<li role="presentation"><a href="#">Clients</a></li>
+			<li role="presentation"><a href="#">Orders</a></li>
+			<li role="presentation"><a href="#">Invoices</a></li>
+			<li role="presentation"><a href="#">Misc</a></li>
+		</ul>
+		<div class="page-header">
+			<h2>Dashboard</h2>
+		</div>
+		<div class="page-header">
+			<h3>Orders <small>Additional desription</small></h2>
+		</div>
+		<div class="container">
+			<!-- Orders Table -->
+			<table class="table table-hover">
+				<thead>
+					<th>#</th> 
+					<th><a href="#">Company</a></th> 
+					<th><a href="#">Order Type</a></th> 
+					<th><a href="#">Order Status</a></th> 
+					<th><a href="#">Created By</a></th>
+					<th><a href="#">Made by</a></th>
+					<th><a href="#">Order Date</a></th>
+					<th><a href="#">Fulfilment Date</a></th>
+					<th><a href="#">Price</a></th>
+					<th><a href="#">Left Price</a></th>
+					<th><a href="#">Contact</a></th>
+				</thead>
+				<tbody>
+					<tr> <!-- In Progress -->
+						<th scope="row">1</th>
+						<td>Company 1</td>
+						<td>Flags</td>
+						<td>In Progress</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>11/10/2016</td>
+						<td>20/10/2016</td>
+						<td>340.23</td>
+						<td>240.00</td>
+						<td><!-- <a href="#" class="navbar-link">Ivan Petrov</a>-->
+						
+						<a tabindex="0" data-toggle="popover" data-trigger="focus" title="Ivan Petrov" data-content="email: <strong>ivan.petrov@copany1.com</strong><br/> tel: <strong>+359 888 88 88 88</strong>">Ivan Petrov</a>
+						
+						
+						</td>
+					</tr>
+					<tr class="success"> <!-- Completed -->
+						<th scope="row">2</th>
+						<td>Company 2</td>
+						<td>Flags</td>
+						<td>Payed</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>17/10/2016</td>
+						<td>340.23</td>
+						<td>0.00</td>
+						<td><a href="#" class="navbar-link">Ivan Ivanov</a></td>
+					</tr>
+					<tr class="warning"> <!-- Completed/Not Payed -->
+						<th scope="row">3</th>
+						<td>Company 1</td>
+						<td>Flags</td>
+						<td>Not fully payed</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>17/10/2016</td>
+						<td>340.23</td>
+						<td>100.00</td>
+						<td><a href="#" class="navbar-link">Ivan Petrov</a></td>
+					</tr>
+					<tr class="active"> <!-- Completed/Archived -->
+						<th scope="row">4</th>
+						<td>Company 3</td>
+						<td>Flags</td>
+						<td>Completed</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>17/10/2016</td>
+						<td>340.23</td>
+						<td>0.00</td>
+						<td><a href="#" class="navbar-link">Stoyan Petrov</a></td>
+					</tr>
+					<tr class="danger"> <!-- Overdue/Payed -->
+						<th scope="row">5</th>
+						<td>Company 4</td>
+						<td>Flags</td>
+						<td>In Progress/Overdue</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>17/10/2016</td>
+						<td>340.23</td>
+						<td>0.00</td>
+						<td><a href="#" class="navbar-link">Stoyan Ivanov</a></td>
+					</tr>
+					
+					<tr> <!-- In Progress -->
+						<th scope="row">6</th>
+						<td>Company 1</td>
+						<td>Flags</td>
+						<td>In Progress</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>11/10/2016</td>
+						<td>20/10/2016</td>
+						<td>340.23</td>
+						<td>240.00</td>
+						<td><a href="#" class="navbar-link">Ivan Petrov</a></td>
+					</tr>
+					<tr> <!-- Completed -->
+						<th scope="row">7</th>
+						<td>Company 2</td>
+						<td>Advertising</td>
+						<td>In Progress</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>15/10/2016</td>
+						<td>25/10/2016</td>
+						<td>120.00</td>
+						<td>120.00</td>
+						<td><a href="#" class="navbar-link">Ivan Ivanov</a></td>
+					</tr>
+					<tr class="warning"> <!-- Completed/Not Payed -->
+						<th scope="row">8</th>
+						<td>Company 1</td>
+						<td>Flags</td>
+						<td>Not fully payed</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>18/10/2016</td>
+						<td>340.23</td>
+						<td>100.00</td>
+						<td><a href="#" class="navbar-link">Ivan Petrov</a></td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td>Company 3</td>
+						<td>Flags</td>
+						<td>In Progress</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>12/10/2016</td>
+						<td>29/10/2016</td>
+						<td>340.23</td>
+						<td>200.00</td>
+						<td><a href="#" class="navbar-link">Stoyan Petrov</a></td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td>Company 4</td>
+						<td>Pens</td>
+						<td>In Progress</td>
+						<td>User 1</td>
+						<td>Worker 1</td>
+						<td>13/10/2016</td>
+						<td>19/10/2016</td>
+						<td>100.00</td>
+						<td>0.00</td>
+						<td><a href="#" class="navbar-link">Stoyan Ivanov</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Orders Navigation -->
+			<nav aria-label="Test">
+				<ul class="pager">
+					<li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+					<li class="next"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+<!--
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+	<script>
+	$("[data-toggle=popover]").popover({html:true})
+	</script>
+
+</body>
+</html>
